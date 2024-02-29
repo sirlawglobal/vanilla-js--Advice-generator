@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+
+*, ::after,::before{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.attribution { 
+font-size: 11px;
+position: absolute; 
+bottom: 0; 
+color: hsl(0, 0%, 100%);
+width: 100%;
+}
+
+.attribution a { 
+font-size: 18px;
+color: hsl(0, 0%, 100%); 
+text-decoration: none;
+}
+.attribution a:hover { 
+color: hsl(39, 97%, 49%); 
+}
+
+.container{
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 40px;
+background-color: hsl(218, 23%, 16%);
+font-family: "Manrope";
+}
+.container > div:first-of-type{
+color: white;
+text-align: center;
+}
+.container > div:first-of-type h1{
+padding: 10px 0;
+}
+
+.content-container{
+padding: 2% ;
+height: 50vh;
+width: 35vw;
+border-radius: 20px;
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color:  hsl(217, 19%, 24%);
+gap: 30px;
+}
+
+p{
+color:  hsl(193, 38%, 86%);
+width: 100%;
+text-align: center;
+font-size: 28px;
+line-height: 40px;
+}
+
+.advice-id{
+font-size: 19px;
+width: 100%;
+text-align: center;
+color: hsl(150, 100%, 66%);
+word-spacing: 20px;
+}
+
+.mob-divider{
+display: none;
+}
+
+.content-container > img:last-of-type{
+
+position: absolute;
+bottom: -30px;
+border-radius: 50%;
+padding: 20px;
+background-color:hsl(150, 100%, 66%);
+}
+
+
+.content-container > img:last-of-type:hover{
+box-shadow: 0 0 20px 10px hsla(150, 100%, 66%,0.5);
+border-radius: 50%;
+}
+
+h1{
+color: white;
+font-size: 20px;
+word-spacing: 20px;
+
+}
+
+@media (min-width:381px) and (max-width:900px) {
+
+.content-container{
+gap: 25px;
+width: 90%;
+height: unset;
+}
+
+.desk-divider{
+margin: 15px 0 60px 0;
+width: 50%;
+}
+
+}
+
+@media (max-width:380px) {
+
+.content-container{
+width: 80%;
+gap: 15px;
+height: unset;
+padding: 15px 20px 0 20px;
+}
+
+
+p{
+font-size: 20px;
+}
+h1 {
+
+font-size: 14px;
+word-spacing: 10px;
+}
+.desk-divider{
+display: none;
+}
+.mob-divider{
+display: unset;
+margin: 15px 0 60px 0;
+width: 80%;
+}
+}
